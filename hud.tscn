@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://djvx2uv546led"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fgd8o"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u37uy"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mampj"]
+bg_color = Color(0.097995795, 0.07960691, 0.080619164, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rtfcp"]
+bg_color = Color(0.1365948, 0.04185064, 0.0018859253, 1)
+
+[node name="HUD" type="CanvasLayer" unique_id=913156531]
+
+[node name="Panel" type="Panel" parent="." unique_id=1539231567]
+offset_left = 425.0
+offset_top = 150.0
+offset_right = 625.0
+offset_bottom = 300.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_fgd8o")
+
+[node name="Title" type="Label" parent="." unique_id=636605656]
+offset_left = 430.0
+offset_top = 100.0
+offset_right = 610.0
+offset_bottom = 145.0
+theme_override_font_sizes/font_size = 30
+text = "NEXT PIECE:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GAME OVER" type="Label" parent="." unique_id=901791165]
+offset_left = 107.0
+offset_top = 180.0
+offset_right = 287.0
+offset_bottom = 225.0
+theme_override_font_sizes/font_size = 30
+text = "GAME OVER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SCORE" type="Label" parent="." unique_id=1325080571]
+offset_left = 638.0
+offset_top = 172.0
+offset_right = 818.0
+offset_bottom = 217.0
+theme_override_font_sizes/font_size = 30
+text = "SCORE : 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="start" type="Button" parent="." unique_id=481186656]
+offset_left = 430.0
+offset_top = 500.0
+offset_right = 610.0
+offset_bottom = 540.0
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_u37uy")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mampj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rtfcp")
+text = "New game
+"
